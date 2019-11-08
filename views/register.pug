@@ -1,0 +1,54 @@
+doctype html
+html
+    head
+        link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+        title Register - Page
+        style(type="text/css").
+            input(type="submit"){
+                background-color: #f26b1d;
+            }
+    body
+        div.row.justify-content-center
+            div.col-md-6 
+                div.card-body 
+                    header.card-header 
+                        h4.card-title Register 
+                    form
+                        div.form-row 
+                            div.col.form-group 
+                                label First Name
+                                input.form-control(name='firstname')
+                            div.col.form-group 
+                                label Last Name
+                                input.form-control(name='lastname')
+                        div.form.row
+                            div.col.form-group 
+                                label Email Address
+                                input.form-control(name='emailaddress')
+                        div.form.row
+                            div.col.form-group
+                                label.form-check.form-check-inline
+                                    input.form-check-input(type='radio' name='gender' value='Female')
+                                    span.form-check-label Female   
+                                label.form-check.form-check-inline
+                                    input(type='radio' name='gender' value='Male')
+                                    span.form-check-label Male 
+                        div.form-row 
+                            div.col.form-group 
+                                label Country
+                                input.form-control(name='city')
+                            div.col.form-group 
+                                label City
+                                select.form-control(name='City') 
+                                    option(value="Mbarara") Mbarara
+                                    option(value="Kampala") Kampala
+                                    option(value="Entebbe") Entebbe
+                                    option(value="Jinja") Jinja
+                        div.form.row
+                            div.col.form-group 
+                                label Create Password
+                                input.form-control(name='password')
+                        div.form.row 
+                            div.col.form-group 
+                                button.btn.btn-primary.btn-block Register
+                                        

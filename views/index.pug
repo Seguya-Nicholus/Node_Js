@@ -1,0 +1,76 @@
+doctype html
+html(lang="en")
+    head
+        title My Application
+        style(type="text/css").
+            body {
+                background-color: gray;
+            }
+            h1{
+                text-align: center;
+            }
+            div {
+                background-color: #ffff;
+                display: inline-block;
+                padding: 2em;
+                width: 40%;
+                height: 50%;
+                margin-left: 400px;
+                margin-top: 55px;
+                border-radius: 8px;
+            }
+            form {
+                margin: 0 auto;
+                width: 700px;
+            }
+            
+            label{
+                font-weight: normal;
+                font-size: 18px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            input{
+                display: inline-block;
+                text-align: left;
+                margin-right: 150px;
+                border: 1px solid black;
+                border-radius:3px ;
+                padding: 4px 12px;
+                display: inline-block;
+                box-sizing: border-box;
+                font-family: "Segoe UI", Arial, sans-serif;
+                background-color: #fff;
+                font-size: 18px;
+                width: 70%;
+                height: 45px;
+            }
+            button{
+                width: 70%;
+                background-color: #f26b1d;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 15px;
+                font-weight: bolder;
+                display: inline-block;
+                text-decoration: none;
+            }
+    body
+        div
+            h1 My Form
+            form
+                label Username :
+                br
+                input(type="text" "name"="username" 'placeholder'="Enter your username" readonly=false required)
+                br
+                br
+                label Password :
+                input(type="password" "name"="password" 'placeholder'="Enter your password" readonly=false required)
+                br
+                br
+                button Login
+
+        
